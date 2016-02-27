@@ -1,0 +1,1291 @@
+fileFormatVersion: 2
+guid: fae3bc38664184e0db5feb17846ffd7f
+timeCreated: 1456438524
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_0
+    21300002: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_1
+    21300004: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_2
+    21300006: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_3
+    21300008: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_4
+    21300010: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_5
+    21300012: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_6
+    21300014: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_7
+    21300016: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_8
+    21300018: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_12
+    21300020: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_13
+    21300022: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_14
+    21300024: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_15
+    21300026: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_16
+    21300028: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_17
+    21300030: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_18
+    21300032: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_19
+    21300034: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_20
+    21300036: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_24
+    21300038: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_25
+    21300040: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_26
+    21300042: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_27
+    21300044: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_28
+    21300046: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_29
+    21300048: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_30
+    21300050: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_31
+    21300052: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_32
+    21300054: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_36
+    21300056: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_37
+    21300058: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_38
+    21300060: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_39
+    21300062: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_40
+    21300064: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_41
+    21300066: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_42
+    21300068: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_43
+    21300070: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_44
+    21300072: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_45
+    21300074: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_46
+    21300076: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_47
+    21300078: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_48
+    21300080: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_49
+    21300082: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_50
+    21300084: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_51
+    21300086: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_52
+    21300088: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_53
+    21300090: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_54
+    21300092: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_55
+    21300094: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_56
+    21300096: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_57
+    21300098: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_58
+    21300100: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_59
+    21300102: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_60
+    21300104: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_61
+    21300106: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_62
+    21300108: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_63
+    21300110: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_64
+    21300112: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_65
+    21300114: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_66
+    21300116: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_67
+    21300118: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_68
+    21300120: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_69
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 64
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 16}
+        - {x: -15, y: 9}
+        - {x: -15, y: -14}
+        - {x: -12, y: -16}
+        - {x: 6, y: -16}
+        - {x: 15, y: -12}
+        - {x: 15, y: 9}
+        - {x: 9, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -15, y: 11}
+        - {x: -15, y: -12}
+        - {x: -14, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -12}
+        - {x: 16, y: 7}
+        - {x: 10, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 16}
+        - {x: -8, y: 16}
+        - {x: -14, y: 9}
+        - {x: -14, y: -14}
+        - {x: -9, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -13}
+        - {x: 16, y: 0}
+        - {x: 13, y: 13}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 16}
+        - {x: -15, y: 8}
+        - {x: -15, y: -15}
+        - {x: -10, y: -16}
+        - {x: 9, y: -16}
+        - {x: 16, y: -8}
+        - {x: 16, y: 8}
+        - {x: 9, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 16}
+        - {x: -15, y: 10}
+        - {x: -15, y: -16}
+        - {x: 10, y: -16}
+        - {x: 16, y: -14}
+        - {x: 16, y: 7}
+        - {x: 10, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -15, y: 10}
+        - {x: -15, y: -11}
+        - {x: -13, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 10}
+        - {x: 13, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 16}
+        - {x: -12, y: 11}
+        - {x: -14, y: 8}
+        - {x: -14, y: -15}
+        - {x: -13, y: -16}
+        - {x: 11, y: -16}
+        - {x: 15, y: -11}
+        - {x: 15, y: 8}
+        - {x: 12, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 16}
+        - {x: -10, y: 16}
+        - {x: -13, y: 9}
+        - {x: -15, y: 0}
+        - {x: -15, y: -9}
+        - {x: -8, y: -16}
+        - {x: 8, y: -16}
+        - {x: 15, y: -10}
+        - {x: 16, y: -7}
+        - {x: 16, y: 15}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 16}
+        - {x: -10, y: 16}
+        - {x: -14, y: 15}
+        - {x: -14, y: -15}
+        - {x: -12, y: -16}
+        - {x: 13, y: -16}
+        - {x: 15, y: -11}
+        - {x: 15, y: 7}
+        - {x: 14, y: 11}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 16}
+        - {x: -11, y: 16}
+        - {x: -14, y: 15}
+        - {x: -14, y: -4}
+        - {x: -7, y: -16}
+        - {x: 11, y: -16}
+        - {x: 13, y: -6}
+        - {x: 13, y: 12}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -14, y: 11}
+        - {x: -14, y: 4}
+        - {x: -11, y: -1}
+        - {x: -8, y: -13}
+        - {x: -7, y: -16}
+        - {x: 7, y: -16}
+        - {x: 12, y: -15}
+        - {x: 13, y: -13}
+        - {x: 13, y: 12}
+        - {x: 10, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 16}
+        - {x: -14, y: 11}
+        - {x: -14, y: -1}
+        - {x: -12, y: -10}
+        - {x: -8, y: -16}
+        - {x: 9, y: -16}
+        - {x: 13, y: -9}
+        - {x: 13, y: 10}
+        - {x: 7, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 16}
+        - {x: -14, y: -3}
+        - {x: -9, y: -16}
+        - {x: 12, y: -16}
+        - {x: 16, y: -10}
+        - {x: 16, y: 14}
+        - {x: 11, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 16}
+        - {x: -14, y: 16}
+        - {x: -14, y: -7}
+        - {x: -10, y: -16}
+        - {x: 10, y: -16}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+        - {x: 14, y: 15}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 16}
+        - {x: -9, y: 16}
+        - {x: -14, y: 10}
+        - {x: -14, y: 3}
+        - {x: -8, y: -16}
+        - {x: 7, y: -16}
+        - {x: 16, y: -8}
+        - {x: 16, y: 10}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 16}
+        - {x: -14, y: 14}
+        - {x: -14, y: -2}
+        - {x: -8, y: -16}
+        - {x: 11, y: -16}
+        - {x: 13, y: -9}
+        - {x: 13, y: 15}
+        - {x: 11, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_19
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 16}
+        - {x: -14, y: 13}
+        - {x: -14, y: -8}
+        - {x: -11, y: -16}
+        - {x: 11, y: -16}
+        - {x: 13, y: -14}
+        - {x: 13, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_20
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 16}
+        - {x: -14, y: -8}
+        - {x: -8, y: -16}
+        - {x: 8, y: -16}
+        - {x: 11, y: -11}
+        - {x: 13, y: -3}
+        - {x: 13, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -13, y: 9}
+        - {x: -13, y: -2}
+        - {x: -11, y: -16}
+        - {x: 9, y: -16}
+        - {x: 14, y: -7}
+        - {x: 14, y: 13}
+        - {x: 13, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 16}
+        - {x: -13, y: -7}
+        - {x: -9, y: -16}
+        - {x: 8, y: -16}
+        - {x: 14, y: 1}
+        - {x: 14, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -13, y: 10}
+        - {x: -13, y: 0}
+        - {x: -9, y: -16}
+        - {x: 11, y: -16}
+        - {x: 14, y: -4}
+        - {x: 14, y: 15}
+        - {x: 13, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 16}
+        - {x: -7, y: 16}
+        - {x: -13, y: 11}
+        - {x: -13, y: 3}
+        - {x: -11, y: -1}
+        - {x: -10, y: -12}
+        - {x: -9, y: -16}
+        - {x: 9, y: -16}
+        - {x: 16, y: -9}
+        - {x: 16, y: 5}
+        - {x: 13, y: 15}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -13, y: 14}
+        - {x: -13, y: -1}
+        - {x: -8, y: -16}
+        - {x: 8, y: -16}
+        - {x: 16, y: -8}
+        - {x: 16, y: 6}
+        - {x: 13, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 16}
+        - {x: -8, y: 16}
+        - {x: -13, y: 12}
+        - {x: -13, y: -1}
+        - {x: -8, y: -16}
+        - {x: 8, y: -16}
+        - {x: 16, y: -9}
+        - {x: 16, y: 5}
+        - {x: 13, y: 15}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 16}
+        - {x: -10, y: 16}
+        - {x: -13, y: 11}
+        - {x: -13, y: 1}
+        - {x: -10, y: -13}
+        - {x: -8, y: -16}
+        - {x: 7, y: -16}
+        - {x: 9, y: -13}
+        - {x: 14, y: 0}
+        - {x: 14, y: 15}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_31
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 13}
+        - {x: 10, y: 16}
+        - {x: -8, y: 16}
+        - {x: -13, y: 12}
+        - {x: -13, y: -11}
+        - {x: -9, y: -16}
+        - {x: 5, y: -16}
+        - {x: 8, y: -13}
+        - {x: 13, y: -2}
+        - {x: 14, y: 5}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_32
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 16}
+        - {x: -13, y: 13}
+        - {x: -13, y: -11}
+        - {x: -7, y: -16}
+        - {x: 10, y: -16}
+        - {x: 14, y: -3}
+        - {x: 14, y: 15}
+        - {x: 12, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: -14}
+        - {x: -12, y: -16}
+        - {x: 9, y: -16}
+        - {x: 14, y: -14}
+        - {x: 14, y: 10}
+        - {x: 13, y: 13}
+        - {x: 11, y: 16}
+        - {x: -10, y: 16}
+        - {x: -13, y: 15}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_37
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 16}
+        - {x: -12, y: 13}
+        - {x: -13, y: 7}
+        - {x: -13, y: -10}
+        - {x: -8, y: -16}
+        - {x: 9, y: -16}
+        - {x: 14, y: -10}
+        - {x: 14, y: 15}
+        - {x: 12, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_38
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 16}
+        - {x: -13, y: 15}
+        - {x: -13, y: -14}
+        - {x: -10, y: -16}
+        - {x: 10, y: -16}
+        - {x: 14, y: -15}
+        - {x: 14, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_39
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 16}
+        - {x: -10, y: 16}
+        - {x: -13, y: 14}
+        - {x: -13, y: -11}
+        - {x: -6, y: -16}
+        - {x: 6, y: -16}
+        - {x: 16, y: -9}
+        - {x: 16, y: 15}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_40
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 16}
+        - {x: -11, y: 16}
+        - {x: -13, y: 15}
+        - {x: -13, y: -10}
+        - {x: -10, y: -16}
+        - {x: 8, y: -16}
+        - {x: 16, y: -8}
+        - {x: 16, y: 12}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_41
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 16}
+        - {x: -13, y: 14}
+        - {x: -13, y: -14}
+        - {x: -9, y: -16}
+        - {x: 12, y: -16}
+        - {x: 16, y: -11}
+        - {x: 16, y: 15}
+        - {x: 13, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_42
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 16}
+        - {x: -13, y: 12}
+        - {x: -13, y: -13}
+        - {x: -7, y: -16}
+        - {x: 10, y: -16}
+        - {x: 14, y: -11}
+        - {x: 14, y: 12}
+        - {x: 9, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_43
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 16}
+        - {x: -13, y: 10}
+        - {x: -13, y: -9}
+        - {x: -7, y: -16}
+        - {x: 8, y: -16}
+        - {x: 14, y: -11}
+        - {x: 14, y: 12}
+        - {x: 9, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_44
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -13, y: 11}
+        - {x: -13, y: -10}
+        - {x: -5, y: -16}
+        - {x: 7, y: -16}
+        - {x: 14, y: -12}
+        - {x: 14, y: 15}
+        - {x: 10, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -14, y: 11}
+        - {x: -14, y: -14}
+        - {x: -11, y: -16}
+        - {x: 8, y: -16}
+        - {x: 11, y: -15}
+        - {x: 15, y: -12}
+        - {x: 15, y: 5}
+        - {x: 11, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_46
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 16}
+        - {x: -11, y: 16}
+        - {x: -15, y: 15}
+        - {x: -15, y: -9}
+        - {x: -8, y: -16}
+        - {x: 9, y: -16}
+        - {x: 16, y: -12}
+        - {x: 16, y: 3}
+        - {x: 15, y: 13}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_47
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 16}
+        - {x: -13, y: 16}
+        - {x: -14, y: 13}
+        - {x: -14, y: -14}
+        - {x: -10, y: -16}
+        - {x: 14, y: -16}
+        - {x: 15, y: -11}
+        - {x: 15, y: -1}
+        - {x: 13, y: 10}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_48
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 16}
+        - {x: -15, y: 10}
+        - {x: -15, y: -15}
+        - {x: -14, y: -16}
+        - {x: 11, y: -16}
+        - {x: 15, y: -14}
+        - {x: 15, y: 8}
+        - {x: 14, y: 10}
+        - {x: 8, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_49
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 16}
+        - {x: -15, y: 13}
+        - {x: -15, y: -10}
+        - {x: -12, y: -16}
+        - {x: 9, y: -16}
+        - {x: 16, y: -11}
+        - {x: 16, y: 15}
+        - {x: 11, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_50
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 16}
+        - {x: -14, y: -15}
+        - {x: -10, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -12}
+        - {x: 16, y: 14}
+        - {x: 11, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -4}
+        - {x: -8, y: -16}
+        - {x: 9, y: -16}
+        - {x: 12, y: -14}
+        - {x: 12, y: 15}
+        - {x: 10, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_52
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 16}
+        - {x: -16, y: 13}
+        - {x: -16, y: -3}
+        - {x: -10, y: -16}
+        - {x: 9, y: -16}
+        - {x: 12, y: -15}
+        - {x: 12, y: 12}
+        - {x: 9, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_53
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -3}
+        - {x: -11, y: -16}
+        - {x: 9, y: -16}
+        - {x: 12, y: -8}
+        - {x: 12, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_54
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 16}
+        - {x: -15, y: 10}
+        - {x: -15, y: -1}
+        - {x: -7, y: -16}
+        - {x: 11, y: -16}
+        - {x: 12, y: -15}
+        - {x: 12, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_55
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 16}
+        - {x: -15, y: 16}
+        - {x: -15, y: -5}
+        - {x: -7, y: -16}
+        - {x: 6, y: -16}
+        - {x: 9, y: -13}
+        - {x: 12, y: -6}
+        - {x: 12, y: 12}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_56
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 16}
+        - {x: -13, y: 15}
+        - {x: -15, y: 8}
+        - {x: -15, y: 1}
+        - {x: -8, y: -16}
+        - {x: 9, y: -16}
+        - {x: 12, y: -8}
+        - {x: 12, y: 13}
+        - {x: 10, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_57
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 4}
+        - {x: -6, y: 2}
+        - {x: -3, y: 3}
+        - {x: -3, y: 6}
+        - {x: -5, y: 8}
+        - {x: -8, y: 7}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_58
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 16}
+        - {x: -12, y: 10}
+        - {x: -12, y: -1}
+        - {x: -10, y: -13}
+        - {x: -8, y: -16}
+        - {x: 9, y: -16}
+        - {x: 14, y: -5}
+        - {x: 14, y: 13}
+        - {x: 13, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_59
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 16}
+        - {x: -12, y: 11}
+        - {x: -12, y: 1}
+        - {x: -9, y: -14}
+        - {x: -8, y: -16}
+        - {x: 7, y: -16}
+        - {x: 10, y: -15}
+        - {x: 14, y: 4}
+        - {x: 14, y: 12}
+        - {x: 11, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_60
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 16}
+        - {x: -12, y: 10}
+        - {x: -12, y: 0}
+        - {x: -10, y: -10}
+        - {x: -7, y: -16}
+        - {x: 10, y: -16}
+        - {x: 14, y: -5}
+        - {x: 14, y: 12}
+        - {x: 12, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_61
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 16}
+        - {x: -8, y: 16}
+        - {x: -12, y: 11}
+        - {x: -12, y: -3}
+        - {x: -10, y: -12}
+        - {x: -8, y: -16}
+        - {x: 9, y: -16}
+        - {x: 15, y: -5}
+        - {x: 15, y: 9}
+        - {x: 14, y: 15}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_62
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 16}
+        - {x: -9, y: 16}
+        - {x: -12, y: 14}
+        - {x: -12, y: -5}
+        - {x: -8, y: -16}
+        - {x: 8, y: -16}
+        - {x: 15, y: -2}
+        - {x: 15, y: 10}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_63
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 16}
+        - {x: -12, y: 11}
+        - {x: -12, y: -3}
+        - {x: -10, y: -10}
+        - {x: -7, y: -16}
+        - {x: 10, y: -16}
+        - {x: 15, y: -4}
+        - {x: 15, y: 11}
+        - {x: 13, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 16}
+        - {x: -12, y: 16}
+        - {x: -12, y: -14}
+        - {x: -8, y: -16}
+        - {x: 5, y: -16}
+        - {x: 14, y: -10}
+        - {x: 14, y: 9}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_65
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 16}
+        - {x: -13, y: -13}
+        - {x: -12, y: -16}
+        - {x: 8, y: -16}
+        - {x: 14, y: -10}
+        - {x: 14, y: 12}
+        - {x: 11, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_66
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: -15}
+        - {x: -10, y: -16}
+        - {x: 9, y: -16}
+        - {x: 14, y: -15}
+        - {x: 14, y: 14}
+        - {x: 13, y: 16}
+        - {x: -11, y: 16}
+        - {x: -12, y: 12}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_67
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 16}
+        - {x: -8, y: 16}
+        - {x: -15, y: 13}
+        - {x: -15, y: -11}
+        - {x: -6, y: -16}
+        - {x: 6, y: -16}
+        - {x: 11, y: -15}
+        - {x: 16, y: -3}
+        - {x: 16, y: 9}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_68
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 16}
+        - {x: -15, y: 14}
+        - {x: -15, y: -15}
+        - {x: -11, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -7}
+        - {x: 16, y: 12}
+        - {x: 14, y: 16}
+    - name: nordics_sprites_classic_no_hats_by_riicu1523-d9rte0m_69
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: -13}
+        - {x: -10, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+        - {x: -7, y: 16}
+        - {x: -15, y: 12}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
