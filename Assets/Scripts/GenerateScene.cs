@@ -18,11 +18,10 @@ public class GenerateScene : MonoBehaviour {
         addTerrainToScene(new Vector3(15f, 0f, 45f));
         addTerrainToScene(new Vector3(25f, 0f, 45f));
         addTerrainToScene(new Vector3(35f, 0f, 45f));
-        addTerrainToScene(new Vector3(45f, 0f, 45f));
 
 
         //Row 10
-        addTerrainToScene(new Vector3(-45f, 0f, -45f));
+        
         addTerrainToScene(new Vector3(-35f, 0f, -45f));
         addTerrainToScene(new Vector3(-25f, 0f, -45f));
         addTerrainToScene(new Vector3(-15f, 0f, -45f));
@@ -33,7 +32,7 @@ public class GenerateScene : MonoBehaviour {
         addTerrainToScene(new Vector3(45f, 0f, -45f));
 
         //Col 1
-        addTerrainToScene (new Vector3 (-45f, 0f, 45f));
+        
 		addTerrainToScene (new Vector3 (-45f, 0f, 35f));
 		addTerrainToScene (new Vector3 (-45f, 0f, 25f));
 		addTerrainToScene (new Vector3 (-45f, 0f, 15f));
@@ -102,7 +101,7 @@ public class GenerateScene : MonoBehaviour {
         addTerrainToScene(new Vector3(45f, 0f, -15f));
         addTerrainToScene(new Vector3(45f, 0f, -25f));
         addTerrainToScene(new Vector3(45f, 0f, -35f));
-        addTerrainToScene(new Vector3(45f, 0f, -45f));
+        
 
         
 
