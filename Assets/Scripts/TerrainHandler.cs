@@ -30,6 +30,24 @@ public class TerrainHandler : MonoBehaviour {
 				buildTurrent ("MachineGun");
 			}
 			GUILayout.EndHorizontal();
+			GUILayout.BeginHorizontal();
+			if (GUILayout.Button("CannonGun"))
+			{
+				buildTurrent ("CannonGun");
+			}
+			GUILayout.EndHorizontal();
+			GUILayout.BeginHorizontal();
+			if (GUILayout.Button("LaserGun"))
+			{
+				buildTurrent ("LaserGun");
+			}
+			GUILayout.EndHorizontal();
+			GUILayout.BeginHorizontal();
+			if (GUILayout.Button("RocketGun"))
+			{
+				buildTurrent ("RocketGun");
+			}
+			GUILayout.EndHorizontal();
 			GUILayout.EndArea ();
 		}
 	}
@@ -37,6 +55,16 @@ public class TerrainHandler : MonoBehaviour {
 	void buildTurrent(string type){
 		btnPressed = false;
 
+		Vector3 vec3 = new Vector3 (transform.position.x, transform.position.y + 10, transform.position.z);
+		if (type == "MachineGun") {
+			PhotonNetwork.Instantiate("MachineGun", vec3 , Quaternion.identity, 0);
+		} else if (type == "CannonGun") {
+			PhotonNetwork.Instantiate("CannonGun", vec3 , Quaternion.identity, 0);
+		} else if (type == "LaserGun") {
+			PhotonNetwork.Instantiate("LaserGun", vec3 , Quaternion.identity, 0);
+		} else if (type == "RocketGun") {
+			PhotonNetwork.Instantiate("RocketGun", vec3 , Quaternion.identity, 0);
+		}
 	}
 
 	void OnMouseDown(){
