@@ -3,9 +3,9 @@ using System.Collections;
 
 public class GameManager : Photon.MonoBehaviour {
 
-	public string playerPrefabName = "Charprefab";
-	public string enemyPrefabName = "Enemy";
-	public string aStarPrefabName = "Astar";
+	public string playerPrefabName;
+	public string enemyPrefabName;
+	public string aStarPrefabName;
 
 	void OnJoinedRoom()
 	{
@@ -18,7 +18,8 @@ public class GameManager : Photon.MonoBehaviour {
 
 		// Spawn our local player
 		//PhotonNetwork.Instantiate(this.playerPrefabName, transform.position, Quaternion.identity, 0);
-		PhotonNetwork.Instantiate(this.enemyPrefabName, new Vector3 (-35f, 2.5f, 45f) , Quaternion.identity, 0);
+
+		PhotonNetwork.Instantiate(this.enemyPrefabName, new Vector3 (-35f, 2.5f, 45f) , Quaternion.Euler(0, 180, 0), 0);
 
 
 		GenerateScene generateScene = GameObject.Find ("Obstacles").GetComponent<GenerateScene> ();
