@@ -3,11 +3,10 @@ using System.Collections;
 
 public class GameManager : Photon.MonoBehaviour {
 
-	public string playerPrefabName;
-	public string enemyPrefabName;
-	public string aStarPrefabName;
+    public Transform enemy;
+    public Transform aStar;
 
-	void OnJoinedRoom()
+    void OnJoinedRoom()
 	{
 		StartGame();
 	}
@@ -19,13 +18,14 @@ public class GameManager : Photon.MonoBehaviour {
 		// Spawn our local player
 		//PhotonNetwork.Instantiate(this.playerPrefabName, transform.position, Quaternion.identity, 0);
 
-		PhotonNetwork.Instantiate(this.enemyPrefabName, new Vector3 (-35f, 2.5f, 45f) , Quaternion.Euler(0, 180, 0), 0);
+		Instantiate(enemy, new Vector3 (-35f, 2.5f, 45f) , Quaternion.Euler(0, 180, 0));
 
 
 		GenerateScene generateScene = GameObject.Find ("Obstacles").GetComponent<GenerateScene> ();
 		generateScene.levelone ();
 
-		PhotonNetwork.Instantiate(this.aStarPrefabName, new Vector3 (0f, 0f, 0f) , Quaternion.identity, 0);
+        Instantiate(aStar, new Vector3(0f, 0f, 0f), Quaternion.identity);
+
 	}
 
 	void OnGUI()
