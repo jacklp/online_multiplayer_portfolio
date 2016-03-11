@@ -4,10 +4,10 @@ using System.Collections.Generic;
 
 public class GenerateScene : MonoBehaviour {
 
-	GameObject terrain;
-	string cubePrefabName ="Cube";
 
-	public void levelone(){
+    public Transform Terrain;
+
+    public void levelone(){
 
         //Row 1
         addTerrainToScene(new Vector3(-45f, 0f, 45f));
@@ -110,6 +110,8 @@ public class GenerateScene : MonoBehaviour {
 
 
 	void addTerrainToScene(Vector3 vec3Pos){
-		PhotonNetwork.Instantiate(this.cubePrefabName, vec3Pos, Quaternion.identity, 0);
+        
+        Instantiate(Terrain, vec3Pos, Quaternion.identity);
+      
 	}
 }
