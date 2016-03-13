@@ -1,10 +1,13 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections;
+
 
 namespace HWRWeaponSystem
 {
 	public class DamageManager : MonoBehaviour
 	{
+        private int currentGold;
 		public AudioClip[] HitSound;
 		public GameObject Effect;
 		public int HP = 100;
@@ -49,7 +52,10 @@ namespace HWRWeaponSystem
 				Destroy (this.gameObject);
 			}
 			this.gameObject.SendMessage ("OnDead", SendMessageOptions.DontRequireReceiver);
-		}
+            currentGold = GameObject.Find("money").GetComponent<MoneyManager>().gold;
+            currentGold = currentGold + 20;
+            GameObject.Find("money").GetComponent<MoneyManager>().gold = currentGold;
+        }
 
 	}
 }

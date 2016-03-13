@@ -50,9 +50,6 @@ public class GameManager : Photon.MonoBehaviour {
 
 		if (numberOfSpawns > 0) {
 
-			Debug.Log ((timeSpawnTemp + Delay));
-			Debug.Log (Time.time);
-
 			if (Time.time >= (timeSpawnTemp + Delay)) {
 
 				Instantiate(enemy, new Vector3 (-34.5f, 0f, 45f) , Quaternion.Euler(0, 180, 0));
