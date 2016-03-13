@@ -6,6 +6,12 @@ public class GameManager : Photon.MonoBehaviour {
     public Transform enemy;
     public Transform aStar;
 
+
+	public float timeSpawnTemp;
+	public float Delay;
+	public int numberOfSpawns = 10;
+
+
     void OnJoinedRoom()
 	{
 		StartGame();
@@ -13,12 +19,13 @@ public class GameManager : Photon.MonoBehaviour {
 	
 	void StartGame()
 	{
+		if (GetComponent<Renderer>())
+			GetComponent<Renderer>().enabled = false;
+
 		Camera.main.farClipPlane = 1000; //Main menu set this to 0.4 for a nicer BG
 
 		// Spawn our local player
 		//PhotonNetwork.Instantiate(this.playerPrefabName, transform.position, Quaternion.identity, 0);
-
-		Instantiate(enemy, new Vector3 (-35f, 2.5f, 45f) , Quaternion.Euler(0, 180, 0));
 
 
 		GenerateScene generateScene = GameObject.Find ("Obstacles").GetComponent<GenerateScene> ();
@@ -35,6 +42,23 @@ public class GameManager : Photon.MonoBehaviour {
 		if (GUILayout.Button("Leave Room"))
 		{
 			PhotonNetwork.LeaveRoom();
+		}
+	}
+
+	private void Update ()
+	{
+
+		if (numberOfSpawns > 0) {
+
+			Debug.Log ((timeSpawnTemp + Delay));
+			Debug.Log (Time.time);
+
+			if (Time.time >= (timeSpawnTemp + Delay)) {
+
+				Instantiate(enemy, new Vector3 (-34.5f, 0f, 45f) , Quaternion.Euler(0, 180, 0));
+				numberOfSpawns--;
+				timeSpawnTemp = Time.time;
+			}
 		}
 	}
 
