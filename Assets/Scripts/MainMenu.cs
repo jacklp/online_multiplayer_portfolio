@@ -34,7 +34,8 @@ public class MainMenu : MonoBehaviour
 
 
 		if (PhotonNetwork.room != null)
-			return; //Only when we're not in a Room
+            
+            return; //Only when we're not in a Room
 
 		GUILayout.BeginArea(new Rect((Screen.width - 400) / 2, (Screen.height - 300) / 2, 400, 300));
 
@@ -57,8 +58,9 @@ public class MainMenu : MonoBehaviour
 		roomName = GUILayout.TextField(roomName);
 		if (GUILayout.Button("GO"))
 		{
-			PhotonNetwork.JoinRoom(roomName);
-		}
+            GameObject.Find("code").GetComponent<GameManager>().gameStartTime = Time.time;
+            PhotonNetwork.JoinRoom(roomName);
+        }
 		GUILayout.EndHorizontal();
 
 		//Create a room (fails if exist!)
@@ -67,8 +69,9 @@ public class MainMenu : MonoBehaviour
 		roomName = GUILayout.TextField(roomName);
 		if (GUILayout.Button("GO"))
 		{
-			// using null as TypedLobby parameter will also use the default lobby
-			PhotonNetwork.CreateRoom(roomName, new RoomOptions() { maxPlayers = 10 }, TypedLobby.Default);
+            GameObject.Find("code").GetComponent<GameManager>().gameStartTime = Time.time;
+            // using null as TypedLobby parameter will also use the default lobby
+            PhotonNetwork.CreateRoom(roomName, new RoomOptions() { maxPlayers = 10 }, TypedLobby.Default);
 		}
 		GUILayout.EndHorizontal();
 
@@ -83,8 +86,9 @@ public class MainMenu : MonoBehaviour
 		{
 			if (GUILayout.Button("GO"))
 			{
-				PhotonNetwork.JoinRandomRoom();
-			}
+                GameObject.Find("code").GetComponent<GameManager>().gameStartTime = Time.time;
+                PhotonNetwork.JoinRandomRoom();
+            }
 		}
 		GUILayout.EndHorizontal();
 
@@ -104,8 +108,10 @@ public class MainMenu : MonoBehaviour
 				GUILayout.Label(game.name + " " + game.playerCount + "/" + game.maxPlayers);
 				if (GUILayout.Button("JOIN"))
 				{
-					PhotonNetwork.JoinRoom(game.name);
-				}
+                    GameObject.Find("code").GetComponent<GameManager>().gameStartTime = Time.time;
+                    PhotonNetwork.JoinRoom(game.name);
+                   
+                }
 				GUILayout.EndHorizontal();
 			}
 			GUILayout.EndScrollView();

@@ -5,7 +5,6 @@ public class MoneyManager : MonoBehaviour
 {
 
     public int gold;
-    public int test;
 
     void OnGUI()
     {

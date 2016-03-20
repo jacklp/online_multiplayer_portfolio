@@ -23,7 +23,7 @@ namespace HWRWeaponSystem
 		
 			if (target) {
 				Quaternion targetlook = Quaternion.LookRotation (target.transform.position - this.transform.position);
-				this.transform.rotation = Quaternion.Lerp (this.transform.rotation, targetlook, Time.deltaTime * 3);
+				this.transform.rotation = Quaternion.Lerp (this.transform.rotation, targetlook, Time.deltaTime * 4);
 			
 				Vector3 dir = (target.transform.position - transform.position).normalized;
 				float direction = Vector3.Dot (dir, transform.forward);

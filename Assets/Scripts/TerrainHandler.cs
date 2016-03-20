@@ -13,50 +13,55 @@ public class TerrainHandler : MonoBehaviour {
     public int cannonGunPrice;
     public int LaserGunPrice;
     public int rocketGunPrice;
+    private bool builtOn = false;
 
     void Start(){
 		rend = GetComponent<Renderer>();
 	}
 	void OnMouseEnter(){
-		rend.material = mouseOverMat;
+        if(!builtOn) rend.material = mouseOverMat;
 	}
 
 	void OnMouseExit(){
-		rend.material = normalMat;
+		if (!builtOn) rend.material = normalMat;
 	}
 
 	void OnGUI(){
-        
-		if (btnPressed) {	
-			GUILayout.BeginArea (new Rect (mousePos.x, mousePos.y, 130, 300));
 
-			//Towers
-			GUILayout.BeginHorizontal();
-			if (GUILayout.Button("MachineGun (£" + machineGunPrice + ")"))
-			{
-				buildTurrent ("MachineGun");
-			}
-			GUILayout.EndHorizontal();
-			GUILayout.BeginHorizontal();
-			if (GUILayout.Button("CannonGun (£" + cannonGunPrice + ")"))
-			{
-				buildTurrent ("CannonGun");
-			}
-			GUILayout.EndHorizontal();
-			GUILayout.BeginHorizontal();
-			if (GUILayout.Button("LaserGun (£" + LaserGunPrice + ")"))
-			{
-				buildTurrent ("LaserGun");
-			}
-			GUILayout.EndHorizontal();
-			GUILayout.BeginHorizontal();
-			if (GUILayout.Button("RocketGun (£" + rocketGunPrice + ")"))
-			{
-				buildTurrent ("RocketGun");
-			}
-			GUILayout.EndHorizontal();
-			GUILayout.EndArea ();
-		}
+        if (!builtOn)
+        {
+            if (btnPressed)
+            {
+                GUILayout.BeginArea(new Rect(0, 0, 130, 300));
+
+                //Towers
+                GUILayout.BeginHorizontal();
+                if (GUILayout.Button("MachineGun (£" + machineGunPrice + ")"))
+                {
+                    buildTurrent("MachineGun");
+                }
+                GUILayout.EndHorizontal();
+                GUILayout.BeginHorizontal();
+                if (GUILayout.Button("CannonGun (£" + cannonGunPrice + ")"))
+                {
+                    buildTurrent("CannonGun");
+                }
+                GUILayout.EndHorizontal();
+                GUILayout.BeginHorizontal();
+                if (GUILayout.Button("LaserGun (£" + LaserGunPrice + ")"))
+                {
+                    buildTurrent("LaserGun");
+                }
+                GUILayout.EndHorizontal();
+                GUILayout.BeginHorizontal();
+                if (GUILayout.Button("RocketGun (£" + rocketGunPrice + ")"))
+                {
+                    buildTurrent("RocketGun");
+                }
+                GUILayout.EndHorizontal();
+                GUILayout.EndArea();
+            }
+        }
 	}
 
 	void buildTurrent(string type){
@@ -80,12 +85,18 @@ public class TerrainHandler : MonoBehaviour {
 
     void UpdateGold(int MinusGold)
     {
-        currentGold = currentGold - MinusGold;
-        GameObject.Find("money").GetComponent<MoneyManager>().gold = currentGold;
+        if (!builtOn)
+        {
+            currentGold = currentGold - MinusGold;
+            GameObject.Find("money").GetComponent<MoneyManager>().gold = currentGold;
+            builtOn = true;
+        }
     }
 	void OnMouseDown(){
-		btnPressed = true;
-        currentGold = GameObject.Find("money").GetComponent<MoneyManager>().gold;
-        mousePos = new Vector2(Input.mousePosition.x, 700-Input.mousePosition.y);
+        if (!builtOn)
+        {
+            btnPressed = true;
+            currentGold = GameObject.Find("money").GetComponent<MoneyManager>().gold;
+        }
 	}
 }

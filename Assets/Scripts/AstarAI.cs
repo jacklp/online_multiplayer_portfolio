@@ -42,7 +42,8 @@ public class AstarAI : MonoBehaviour {
         }
         if (currentWaypoint >= path.vectorPath.Count)
         {
-            Debug.Log("End Of Path Reached");
+            GameObject.Find("code").GetComponent<GameManager>().lives--;
+            Destroy(gameObject);
             return;
         }
         //Direction to the next waypoint
