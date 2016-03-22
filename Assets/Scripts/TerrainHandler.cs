@@ -14,6 +14,15 @@ public class TerrainHandler : MonoBehaviour {
     public int LaserGunPrice;
     public int rocketGunPrice;
     private bool builtOn = false;
+    private Font f;
+    private GUIStyle backgroundStyle;
+    private GUIStyle myButtonStyle;
+
+    void Awake()
+    {
+
+        f = (Font)Resources.Load("inktank");
+    }
 
     void Start(){
 		rend = GetComponent<Renderer>();
@@ -28,43 +37,61 @@ public class TerrainHandler : MonoBehaviour {
 		if (!builtOn) rend.material = normalMat;
 	}
 
-	void OnGUI(){
+    private Texture2D MakeTex(int width, int height, Color col)
+    {
+        Color[] pix = new Color[width * height];
+
+        for (int i = 0; i < pix.Length; i++)
+            pix[i] = col;
+
+        Texture2D result = new Texture2D(width, height);
+        result.SetPixels(pix);
+        result.Apply();
+
+        return result;
+
+    }
+    void OnGUI(){
+
+        backgroundStyle = new GUIStyle();
+        backgroundStyle.normal.background = MakeTex(600, 1, new Color(0f, 0f, 0f, 1.0f));
+
+        myButtonStyle = new GUIStyle(GUI.skin.button);
+        myButtonStyle.fontSize = 50;
+        myButtonStyle.font = f;
+
+        GUILayout.BeginArea(new Rect(0,Screen.height-100,Screen.width/2, 100), backgroundStyle);
 
         if (!builtOn)
         {
             if (btnPressed)
             {
-                GUILayout.BeginArea(new Rect(0, 0, 130, 300));
-
                 //Towers
                 GUILayout.BeginHorizontal();
-                if (GUILayout.Button("MachineGun (£" + machineGunPrice + ")"))
+                if (GUILayout.Button("MachineGun (£" + machineGunPrice + ")", myButtonStyle, GUILayout.Width(100)))
                 {
                     buildTurrent("MachineGun");
                 }
-                GUILayout.EndHorizontal();
-                GUILayout.BeginHorizontal();
-                if (GUILayout.Button("CannonGun (£" + cannonGunPrice + ")"))
+                if (GUILayout.Button("CannonGun (£" + cannonGunPrice + ")", myButtonStyle, GUILayout.Width(100)))
                 {
                     buildTurrent("CannonGun");
                 }
                 GUILayout.EndHorizontal();
                 GUILayout.BeginHorizontal();
-                if (GUILayout.Button("LaserGun (£" + LaserGunPrice + ")"))
+                if (GUILayout.Button("LaserGun (£" + LaserGunPrice + ")", myButtonStyle, GUILayout.Width(100)))
                 {
                     buildTurrent("LaserGun");
                 }
-                GUILayout.EndHorizontal();
-                GUILayout.BeginHorizontal();
-                if (GUILayout.Button("RocketGun (£" + rocketGunPrice + ")"))
+                if (GUILayout.Button("RocketGun (£" + rocketGunPrice + ")", myButtonStyle, GUILayout.Width(100)))
                 {
                     buildTurrent("RocketGun");
                 }
                 GUILayout.EndHorizontal();
-                GUILayout.EndArea();
+                
             }
         }
-	}
+        GUILayout.EndArea();
+    }
 
 	void buildTurrent(string type){
 		btnPressed = false;
