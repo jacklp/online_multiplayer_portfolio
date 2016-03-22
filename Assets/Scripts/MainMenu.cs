@@ -3,8 +3,13 @@ using System.Collections;
 
 public class MainMenu : MonoBehaviour
 {
+    private Font f;
+    GUIStyle myLabelStyle;
+    GUIStyle backgroundStyle;
+    GUIStyle textFieldStyle;
+    GUIStyle buttonStyle;
 
-	void Awake()
+    void Awake()
 	{
 		//PhotonNetwork.logLevel = NetworkLogLevel.Full;
 
@@ -17,34 +22,67 @@ public class MainMenu : MonoBehaviour
 
 		//Set camera clipping for nicer "main menu" background
 		Camera.main.farClipPlane = Camera.main.nearClipPlane + 0.1f;
+        f = (Font)Resources.Load("inktank");
 
-	}
+       
+    }
 
 	private string roomName = "myRoom";
 	private Vector2 scrollPos = Vector2.zero;
 
+    private Texture2D MakeTex(int width, int height, Color col)
+    {
+        Color[] pix = new Color[width * height];
 
-	void OnGUI()
+        for (int i = 0; i < pix.Length; i++)
+            pix[i] = col;
+
+        Texture2D result = new Texture2D(width, height);
+        result.SetPixels(pix);
+        result.Apply();
+
+        return result;
+    }
+
+    void OnGUI()
 	{
-		if (!PhotonNetwork.connected)
+
+        myLabelStyle = new GUIStyle(GUI.skin.label);
+        myLabelStyle.fontSize = 50;
+        myLabelStyle.font = f;
+        myLabelStyle.fixedWidth = 250;
+
+        textFieldStyle = new GUIStyle(GUI.skin.textField);
+        textFieldStyle.fontSize = 50;
+        textFieldStyle.font = f;
+
+        buttonStyle = new GUIStyle(GUI.skin.button);
+        buttonStyle.fontSize = 50;
+        buttonStyle.font = f;
+
+        backgroundStyle = new GUIStyle();
+        backgroundStyle.normal.background = MakeTex(600, 1, new Color(0f, 0f, 0f, 1.0f));
+
+
+        if (!PhotonNetwork.connected)
 		{
-			ShowConnectingGUI();
+			ShowConnectingGUI(backgroundStyle, myLabelStyle);
 			return;   //Wait for a connection
 		}
-
+        
 
 		if (PhotonNetwork.room != null)
             
             return; //Only when we're not in a Room
 
-		GUILayout.BeginArea(new Rect((Screen.width - 400) / 2, (Screen.height - 300) / 2, 400, 300));
+		GUILayout.BeginArea(new Rect(0,0, Screen.width, Screen.height), backgroundStyle);
 
-		GUILayout.Label("Main Menu");
+		GUILayout.Label("Main Menu", myLabelStyle);
 
 		//Player name
 		GUILayout.BeginHorizontal();
-		GUILayout.Label("Player name:", GUILayout.Width(150));
-		PhotonNetwork.playerName = GUILayout.TextField(PhotonNetwork.playerName);
+		GUILayout.Label("Player name:", myLabelStyle);
+		PhotonNetwork.playerName = GUILayout.TextField(PhotonNetwork.playerName, textFieldStyle, GUILayout.Width(500), GUILayout.Height(50));
 		if (GUI.changed)//Save name
 			PlayerPrefs.SetString("playerName", PhotonNetwork.playerName);
 		GUILayout.EndHorizontal();
@@ -54,9 +92,9 @@ public class MainMenu : MonoBehaviour
 
 		//Join room by title
 		GUILayout.BeginHorizontal();
-		GUILayout.Label("JOIN ROOM:", GUILayout.Width(150));
-		roomName = GUILayout.TextField(roomName);
-		if (GUILayout.Button("GO"))
+		GUILayout.Label("JOIN ROOM:", myLabelStyle);
+		roomName = GUILayout.TextField(roomName, textFieldStyle, GUILayout.Width(500), GUILayout.Height(50));
+		if (GUILayout.Button("GO", buttonStyle))
 		{
             GameObject.Find("code").GetComponent<GameManager>().gameStartTime = Time.time;
             PhotonNetwork.JoinRoom(roomName);
@@ -65,9 +103,9 @@ public class MainMenu : MonoBehaviour
 
 		//Create a room (fails if exist!)
 		GUILayout.BeginHorizontal();
-		GUILayout.Label("CREATE ROOM:", GUILayout.Width(150));
-		roomName = GUILayout.TextField(roomName);
-		if (GUILayout.Button("GO"))
+		GUILayout.Label("CREATE ROOM:", myLabelStyle);
+		roomName = GUILayout.TextField(roomName, textFieldStyle, GUILayout.Width(500), GUILayout.Height(50));
+		if (GUILayout.Button("GO", buttonStyle))
 		{
             GameObject.Find("code").GetComponent<GameManager>().gameStartTime = Time.time;
             // using null as TypedLobby parameter will also use the default lobby
@@ -77,14 +115,14 @@ public class MainMenu : MonoBehaviour
 
 		//Join random room
 		GUILayout.BeginHorizontal();
-		GUILayout.Label("JOIN RANDOM ROOM:", GUILayout.Width(150));
+		GUILayout.Label("JOIN RANDOM ROOM:", myLabelStyle);
 		if (PhotonNetwork.GetRoomList().Length == 0)
 		{
-			GUILayout.Label("..no games available...");
+			GUILayout.Label("..no games available...", myLabelStyle);
 		}
 		else
 		{
-			if (GUILayout.Button("GO"))
+			if (GUILayout.Button("GO", buttonStyle))
 			{
                 GameObject.Find("code").GetComponent<GameManager>().gameStartTime = Time.time;
                 PhotonNetwork.JoinRandomRoom();
@@ -93,10 +131,10 @@ public class MainMenu : MonoBehaviour
 		GUILayout.EndHorizontal();
 
 		GUILayout.Space(30);
-		GUILayout.Label("ROOM LISTING:");
+		GUILayout.Label("ROOM LISTING:", myLabelStyle);
 		if (PhotonNetwork.GetRoomList().Length == 0)
 		{
-			GUILayout.Label("..no games available..");
+			GUILayout.Label("..no games available..", myLabelStyle);
 		}
 		else
 		{
@@ -105,8 +143,8 @@ public class MainMenu : MonoBehaviour
 			foreach (RoomInfo game in PhotonNetwork.GetRoomList())
 			{
 				GUILayout.BeginHorizontal();
-				GUILayout.Label(game.name + " " + game.playerCount + "/" + game.maxPlayers);
-				if (GUILayout.Button("JOIN"))
+				GUILayout.Label(game.name + " " + game.playerCount + "/" + game.maxPlayers, myLabelStyle);
+				if (GUILayout.Button("JOIN", buttonStyle))
 				{
                     GameObject.Find("code").GetComponent<GameManager>().gameStartTime = Time.time;
                     PhotonNetwork.JoinRoom(game.name);
@@ -121,12 +159,14 @@ public class MainMenu : MonoBehaviour
 	}
 
 
-	void ShowConnectingGUI()
+	void ShowConnectingGUI(GUIStyle backgroundStyle, GUIStyle myLabelStyle)
 	{
-		GUILayout.BeginArea(new Rect((Screen.width - 400) / 2, (Screen.height - 300) / 2, 400, 300));
+        myLabelStyle.fixedWidth = 500;
 
-		GUILayout.Label("Connecting to Photon server.");
-		GUILayout.Label("Hint: This demo uses a settings file and logs the server address to the console.");
+        GUILayout.BeginArea(new Rect(0,0, Screen.width, Screen.height), backgroundStyle);
+
+		GUILayout.Label("Connecting to Photon server.", myLabelStyle);
+		GUILayout.Label("Hint: This demo uses a settings file and logs the server address to the console.", myLabelStyle);
 
 		GUILayout.EndArea();
 	}

@@ -4,8 +4,8 @@
 public class TerrainHandler : MonoBehaviour {
 
 	Renderer rend;
-	Material mouseOverMat = Resources.Load("terrainMouseOverMat", typeof(Material)) as Material;
-	Material normalMat = Resources.Load("terrainMat", typeof(Material)) as Material;
+    Material mouseOverMat;
+	Material normalMat;
 	bool btnPressed = false;
     Vector2 mousePos;
     int currentGold;
@@ -17,7 +17,9 @@ public class TerrainHandler : MonoBehaviour {
 
     void Start(){
 		rend = GetComponent<Renderer>();
-	}
+        mouseOverMat = Resources.Load("terrainMouseOverMat", typeof(Material)) as Material;
+        normalMat = Resources.Load("terrainMat", typeof(Material)) as Material;
+    }
 	void OnMouseEnter(){
         if(!builtOn) rend.material = mouseOverMat;
 	}
