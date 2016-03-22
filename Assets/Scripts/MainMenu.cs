@@ -23,8 +23,6 @@ public class MainMenu : MonoBehaviour
 		//Set camera clipping for nicer "main menu" background
 		Camera.main.farClipPlane = Camera.main.nearClipPlane + 0.1f;
         f = (Font)Resources.Load("inktank");
-
-       
     }
 
 	private string roomName = "myRoom";
