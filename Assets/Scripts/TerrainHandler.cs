@@ -55,42 +55,44 @@ public class TerrainHandler : MonoBehaviour {
 
         backgroundStyle = new GUIStyle();
         backgroundStyle.normal.background = MakeTex(600, 1, new Color(0f, 0f, 0f, 1.0f));
+        GUI.depth = 1;
 
         myButtonStyle = new GUIStyle(GUI.skin.button);
-        myButtonStyle.fontSize = 50;
+        myButtonStyle.fontSize = 30;
         myButtonStyle.font = f;
 
-        GUILayout.BeginArea(new Rect(0,Screen.height-100,Screen.width/2, 100), backgroundStyle);
 
         if (!builtOn)
         {
             if (btnPressed)
             {
+                GUI.depth = 0;
+                GUILayout.BeginArea(new Rect(0, Screen.height - 100, Screen.width / 2, 100), backgroundStyle);
+
                 //Towers
                 GUILayout.BeginHorizontal();
-                if (GUILayout.Button("MachineGun (£" + machineGunPrice + ")", myButtonStyle, GUILayout.Width(100)))
+                if (GUILayout.Button("MachineGun (£" + machineGunPrice + ")", myButtonStyle, GUILayout.Width(250)))
                 {
                     buildTurrent("MachineGun");
                 }
-                if (GUILayout.Button("CannonGun (£" + cannonGunPrice + ")", myButtonStyle, GUILayout.Width(100)))
+                if (GUILayout.Button("CannonGun (£" + cannonGunPrice + ")", myButtonStyle, GUILayout.Width(250)))
                 {
                     buildTurrent("CannonGun");
                 }
                 GUILayout.EndHorizontal();
                 GUILayout.BeginHorizontal();
-                if (GUILayout.Button("LaserGun (£" + LaserGunPrice + ")", myButtonStyle, GUILayout.Width(100)))
+                if (GUILayout.Button("LaserGun (£" + LaserGunPrice + ")", myButtonStyle, GUILayout.Width(250)))
                 {
                     buildTurrent("LaserGun");
                 }
-                if (GUILayout.Button("RocketGun (£" + rocketGunPrice + ")", myButtonStyle, GUILayout.Width(100)))
+                if (GUILayout.Button("RocketGun (£" + rocketGunPrice + ")", myButtonStyle, GUILayout.Width(250)))
                 {
                     buildTurrent("RocketGun");
                 }
                 GUILayout.EndHorizontal();
-                
+                GUILayout.EndArea();
             }
-        }
-        GUILayout.EndArea();
+        } 
     }
 
 	void buildTurrent(string type){
