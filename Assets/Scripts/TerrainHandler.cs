@@ -53,19 +53,19 @@ public class TerrainHandler : MonoBehaviour {
     }
     void OnGUI(){
 
-        backgroundStyle = new GUIStyle();
-        backgroundStyle.normal.background = MakeTex(600, 1, new Color(0f, 0f, 0f, 1.0f));
-        GUI.depth = 1;
-
-        myButtonStyle = new GUIStyle(GUI.skin.button);
-        myButtonStyle.fontSize = 30;
-        myButtonStyle.font = f;
-
-
         if (!builtOn)
         {
             if (btnPressed)
             {
+
+                backgroundStyle = new GUIStyle();
+                backgroundStyle.normal.background = MakeTex(600, 1, new Color(0f, 0f, 0f, 1.0f));
+                GUI.depth = 1;
+
+                myButtonStyle = new GUIStyle(GUI.skin.button);
+                myButtonStyle.fontSize = 30;
+                myButtonStyle.font = f;
+
                 GUI.depth = 0;
                 GUILayout.BeginArea(new Rect(0, Screen.height - 100, Screen.width / 2, 100), backgroundStyle);
 
