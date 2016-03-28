@@ -94,10 +94,6 @@ public class MainMenu : MonoBehaviour
 		roomName = GUILayout.TextField(roomName, textFieldStyle, GUILayout.Width(500), GUILayout.Height(50));
 		if (GUILayout.Button("GO", buttonStyle))
 		{
-            if (PhotonNetwork.isMasterClient)
-            {
-                GameObject.Find("code").GetComponent<GameManager>().gameStartTime = Time.time;
-            }
             PhotonNetwork.JoinRoom(roomName);
         }
 		GUILayout.EndHorizontal();
@@ -108,10 +104,9 @@ public class MainMenu : MonoBehaviour
 		roomName = GUILayout.TextField(roomName, textFieldStyle, GUILayout.Width(500), GUILayout.Height(50));
 		if (GUILayout.Button("GO", buttonStyle))
 		{
-            if (PhotonNetwork.isMasterClient)
-            {
-                GameObject.Find("code").GetComponent<GameManager>().gameStartTime = Time.time;
-            }
+            
+            GameObject.Find("code").GetComponent<GameManager>().gameStartTime = Time.time;
+            
             // using null as TypedLobby parameter will also use the default lobby
             PhotonNetwork.CreateRoom(roomName, new RoomOptions() { maxPlayers = 10 }, TypedLobby.Default);
 		}
@@ -128,11 +123,6 @@ public class MainMenu : MonoBehaviour
 		{
 			if (GUILayout.Button("GO", buttonStyle))
 			{
-                if (PhotonNetwork.isMasterClient)
-                {
-                    GameObject.Find("code").GetComponent<GameManager>().gameStartTime = Time.time;
-                }
-                
                 PhotonNetwork.JoinRandomRoom();
             }
 		}
@@ -154,10 +144,6 @@ public class MainMenu : MonoBehaviour
 				GUILayout.Label(game.name + " " + game.playerCount + "/" + game.maxPlayers, myLabelStyle);
 				if (GUILayout.Button("JOIN", buttonStyle))
 				{
-                    if (PhotonNetwork.isMasterClient)
-                    {
-                        GameObject.Find("code").GetComponent<GameManager>().gameStartTime = Time.time;
-                    }
                     PhotonNetwork.JoinRoom(game.name);
                    
                 }

@@ -59,9 +59,10 @@ public class GameManager : Photon.MonoBehaviour {
 
 			    if ((Time.time - gameStartTime) >= (timeFromLastSpawn + Delay)) {
 
-                    Transform newPlayer = Instantiate(enemy, new Vector3 (-34.5f, 0f, 45f) , Quaternion.Euler(0, 180, 0)) as Transform;
+                    GameObject newPlayer = PhotonNetwork.Instantiate("TankEnemy", new Vector3(-34.5f, 0f, 45f) , Quaternion.Euler(0, 180, 0), 0 );
+                
 
-                    newPlayer.gameObject.GetComponent<HWRWeaponSystem.DamageManager>().HP = newPlayer.gameObject.GetComponent<HWRWeaponSystem.DamageManager>().HP + (roundCount*10);
+                    newPlayer.GetComponent<HWRWeaponSystem.DamageManager>().HP = newPlayer.gameObject.GetComponent<HWRWeaponSystem.DamageManager>().HP + (roundCount*10);
 
 				    numberOfSpawns--;
                     timeFromLastSpawn = Time.time;
