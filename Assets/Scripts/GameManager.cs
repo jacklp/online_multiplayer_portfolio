@@ -43,26 +43,35 @@ public class GameManager : Photon.MonoBehaviour {
 
 	private void Update ()
 	{
+        // if the game is not over
+        if (lives == 0)
+        {
+            Debug.Log("YOUR DEAD");
+            return;
+        }
 
 
-        if (gameStartTime != 0)
+
+
+        if (PhotonNetwork.isMasterClient)
         {
             
-            if (lives == 0)
-            {
-                Debug.Log("YOUR DEAD");
-            }
-            //increase Enemy HP based on number of players in room.
+            //get server time.
+    
             enemy.gameObject.GetComponent<HWRWeaponSystem.DamageManager>().HP = enemy.gameObject.GetComponent<HWRWeaponSystem.DamageManager>().HP * (1 +PhotonNetwork.otherPlayers.Length);
+
+            Debug.Log(numberOfSpawns);
+            Debug.Log(gameStartTime);
+            Debug.Log(timeFromLastSpawn);
+            Debug.Log(Delay);
 
             if (numberOfSpawns > 0) {
 
-			    if ((Time.time - gameStartTime) >= (timeFromLastSpawn + Delay)) {
+			    if ((Time.time) >= (timeFromLastSpawn + Delay)) {
 
                     GameObject newPlayer = PhotonNetwork.Instantiate("TankEnemy", new Vector3(-34.5f, 0f, 45f) , Quaternion.Euler(0, 180, 0), 0 );
-                
 
-                    newPlayer.GetComponent<HWRWeaponSystem.DamageManager>().HP = newPlayer.gameObject.GetComponent<HWRWeaponSystem.DamageManager>().HP + (roundCount*10);
+                    newPlayer.GetComponent<HWRWeaponSystem.DamageManager>().HP = newPlayer.gameObject.GetComponent<HWRWeaponSystem.DamageManager>().HP + (roundCount*20);
 
 				    numberOfSpawns--;
                     timeFromLastSpawn = Time.time;
@@ -70,14 +79,14 @@ public class GameManager : Photon.MonoBehaviour {
 		    }
             else
             {
-                if((Time.time - gameStartTime) >= timeFromLastSpawn + roundStartDelay)
+                if((Time.time) >= timeFromLastSpawn + roundStartDelay)
                 {
                     roundCount++;
                     numberOfSpawns = 10 + (2 * roundCount);
                 }
             }
         }
-	}
+    }
 
 	void OnDisconnectedFromPhoton()
 	{
