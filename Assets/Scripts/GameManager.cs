@@ -43,6 +43,8 @@ public class GameManager : Photon.MonoBehaviour {
 
 	private void Update ()
 	{
+
+
         if (gameStartTime != 0)
         {
             
