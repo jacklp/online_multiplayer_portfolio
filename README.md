@@ -22,7 +22,6 @@ The Networking in this project is split up in to 3 distinct areas:
 ##UI design and layout
 - The font design is inktank.ttf and was taken from http://www.dafont.com/
 - The design leverages the inbuilt GUILayout functionality to create overlays on the main camera.
-![ingame](screenshots/ingame.png)
 
 ##Dynamic Content Generation
 The level is dynamically generated through code and could easily be built upon for other levels.
@@ -30,6 +29,7 @@ The level also respects the AI pathing as we will discuss now.
 
 ##AStarPathfinding
 The Pathfinding works by the raytracer detecting objects on a specific layer in unity and drawing a grid. It then looks at the seeker script on an object and plots the quickest path to the waypoint.
+![ingame](screenshots/ingame.png)
 
 ##WeaponSystem
 The towers and enemies were taken from the weaponsystem asset package to save time.
