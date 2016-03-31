@@ -2,16 +2,17 @@ Online Multiplayer Tower Defence
 ===============
 
 ##Youtube Demo
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=Axi5W_qgaEI
-" target="_blank"><img src="http://img.youtube.com/vi/Axi5W_qgaEI/0.jpg" 
-alt="Youtube Video Demo" width="240" height="180" border="10" /></a>
-
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/Axi5W_qgaEI/0.jpg)](http://www.youtube.com/watch?v=Axi5W_qgaEI)
 
 ##Photon Unity Networking
 The Networking in this project is split up in to 3 distinct areas:
 
 1. The Create/Join Main Menu UI.
-![alt tag](https://raw.githubusercontent.com/jacklp/online_multiplayer_portfolio/master/screenshots/mainmenu.png)
+
+![alt text](https://github.com/jacklp/online_multiplayer_portfolio/raw/master/screenshots/mainmenu.png "Logo Title Text 1")
+
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
 
 - The list of available rooms is constantly polling the PUN servers for rooms registered to the application id that I specified in the project.
 
