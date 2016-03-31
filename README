@@ -1,11 +1,17 @@
 Online Multiplayer Tower Defence
 ===============
 
-##Photon Unity Networking
+##Youtube Demo
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=Axi5W_qgaEI
+" target="_blank"><img src="http://img.youtube.com/vi/Axi5W_qgaEI/0.jpg" 
+alt="Youtube Video Demo" width="240" height="180" border="10" /></a>
 
+
+##Photon Unity Networking
 The Networking in this project is split up in to 3 distinct areas:
+
 1. The Create/Join Main Menu UI.
-[Insert Screenshot]
+![alt tag](https://raw.githubusercontent.com/jacklp/online_multiplayer_portfolio/master/screenshots/mainmenu.png)
 
 - The list of available rooms is constantly polling the PUN servers for rooms registered to the application id that I specified in the project.
 
@@ -18,7 +24,7 @@ The Networking in this project is split up in to 3 distinct areas:
 ##UI design and layout
 - The font design is inktank.ttf and was taken from http://www.dafont.com/
 - The design leverages the inbuilt GUILayout functionality to create overlays on the main camera.
-
+![alt tag](https://raw.githubusercontent.com/jacklp/online_multiplayer_portfolio/master/screenshots/ingame.png)
 
 ##Dynamic Content Generation
 The level is dynamically generated through code and could easily be built upon for other levels.
